@@ -66,7 +66,7 @@ img {
     width: 100%;
     background-color: rgba(0, 0, 255, 0.47);
 }
-.debug .col_2 {
+.debug .music_box .col_2 {
     height: 150px;
 }
 .debug .shift {
@@ -74,18 +74,28 @@ img {
     width: 100%;
     background-color: rgba(0, 0, 255, 0.515);
 }
+.debug .nav_left {
+    height: 100%;
+}
+.debug .navigation {
+    height: 50%;
+    width: 100%;
+    background-color: rgba(172, 255, 47, 0.501);
+}
+.debug .profile {
+    height: 10%;
+    width: 100%;
+    background-color: rgba(172, 255, 47, 0.501);
+}
+
 /* #endregion */
 
 /* #region Player */
-.player {
-    z-index: 999;
-}
+
 .player .play {
-    flex-grow: 2;
 }
 .player .actions,
 .player .playback {
-    flex-grow: 1;
 }
 .player .actions {
     text-align: right;
@@ -105,4 +115,10 @@ img {
 }
 .box .col_10 {
     overflow: auto;
+}
+
+/* #region Nav Left */
+.nav_left {
+    flex-direction: column;
+    justify-content: space-between;
 }
