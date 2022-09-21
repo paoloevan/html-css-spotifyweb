@@ -7,7 +7,7 @@
 img {
     max-width: 100%;
 }
-.container {
+.wrapper {
     height: 100vh;
 }
 .box {
@@ -32,7 +32,6 @@ img {
     width: calc(100% / 12 * 12);
 }
 /* #endregion */
-
 
 /* #region Debug */
 .debug .box {
@@ -102,23 +101,41 @@ img {
 }
 /* #endregion */
 
-/* #region Music */
+/* #region Music Box */
 .recent_music {
     flex-wrap: wrap;
 }
-
-/* #endregion */
-
-/* #region Music Box */
 .music_box {
     max-height: 100%;
 }
 .box .col_10 {
     overflow: auto;
 }
+/* #endregion */
 
 /* #region Nav Left */
 .nav_left {
     flex-direction: column;
     justify-content: space-between;
 }
+/* #endregion */
+
+/* #region Media Query */
+@media screen and (max-width: 888px) {
+    .music_box
+    .col_md_3 {
+        width: calc(100% / 12 * 3);
+    }
+}
+
+@media screen and (max-width: 648px) {
+    .music_box
+    .col_sm_6 {
+        width: calc(100% / 12 * 6);
+    }
+}
+
+@media screen and (max-width: 552px) {
+    
+}
+/* #endregion */
