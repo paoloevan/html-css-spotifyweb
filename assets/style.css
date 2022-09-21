@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 img {
     max-width: 100%;
 }
@@ -11,10 +14,18 @@ img {
     height: 100vh;
 }
 .box {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
 }
-.player {
-    height: 100px;
+:root {
+    --sf-black: #000000;
+    --sf-white: #FFFFFF;
+    --sf-darker: #080B12;
+    --sf-dark: #141922;
+    --sf-dark-gray: #282828;
+    --sf-spoty: #99E22E;
+    --sf-grey: #A3A3A3;
+    --sf-light-grey: #C1C1C1;
+
 }
 /* #endregion */
 
@@ -90,14 +101,35 @@ img {
 /* #endregion */
 
 /* #region Player */
-
+.player {
+    height: 80px;
+    padding: 0.5rem;
+    background-color: var(--sf-dark-gray);
+}
 .player .play {
 }
-.player .actions,
 .player .playback {
+    align-items: center;
+    padding: 0.5rem 0;
 }
 .player .actions {
     text-align: right;
+}
+.player .playback>div {
+    padding-left: 0.5rem;
+}
+.player img {
+    max-height: 100%;
+}
+.name_track {
+    color: var(--sf-white);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.name_artist {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--sf-grey);
 }
 /* #endregion */
 
