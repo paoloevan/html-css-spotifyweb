@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
     <title>Spotify</title>
 </head>
 
-<body class="debug">
+<body class="">
     <div class="wrapper">
         <!-- sezione in alto -->
         <div class="box row">
@@ -55,16 +59,49 @@
         </div>
         <!-- sezione player -->
         <div class="player row">
+            <!-- Riproduzione in corso -->
+            <div class="playback row col_2">
+                <div class="playback_left row">
+                    <img src="./assets/img/sinister.jpeg" alt="">
+                    <div>
+                        <div class="name_track">Sinister</div>
+                        <div class="name_artist">Brano Nome</div>
+                    </div>
+                </div>
 
-            <div class="playback row">
-                <img src="./assets/img/sinister.jpeg" alt="">
-                <div>
-                    <div class="name_track">Sinister</div>
-                    <div class="name_artist">Brano Nome</div>
+                <div class="playback_right row">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
                 </div>
             </div>
-            <div class="play"></div>
-            <div class="actions"></div>
+
+            <div class="empty col_2"></div>
+            <!-- Player centrale -->
+            <div class="play col_4">
+
+                <div class="play_nav row">
+                    <div class="empty col_4"></div>
+                    <div class="row col_4">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                    <div class="empty col_4"></div>
+                </div>
+
+                <div class="play_time row">
+                    <div class="col_1">0:25</div>
+                    <div class="col_10 row"><div></div></div>
+                    <div class="col_1">4:35</div>
+                </div>
+
+            </div>
+
+            <div class="empty col_2"></div>
+
+            <div class="actions col_2"></div>
         </div>
     </div>
 </body>
