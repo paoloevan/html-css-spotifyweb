@@ -28,6 +28,9 @@ img {
 .col_10 {
     width: calc(100% / 12 * 10);
 }
+.col_12 {
+    width: calc(100% / 12 * 12);
+}
 /* #endregion */
 
 
@@ -66,8 +69,17 @@ img {
 .debug .col_2 {
     height: 150px;
 }
+.debug .shift {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 255, 0.515);
+}
+/* #endregion */
 
 /* #region Player */
+.player {
+    z-index: 999;
+}
 .player .play {
     flex-grow: 2;
 }
@@ -83,4 +95,14 @@ img {
 /* #region Music */
 .recent_music {
     flex-wrap: wrap;
+}
+
+/* #endregion */
+
+/* #region Music Box */
+.music_box {
+    max-height: 100%;
+}
+.box .col_10 {
+    overflow: auto;
 }
