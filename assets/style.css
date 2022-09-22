@@ -22,11 +22,16 @@ img {
     --sf-darker: #080B12;
     --sf-dark: #141922;
     --sf-dark-gray: #282828;
+    --sf-gray-text: #717171;
     --sf-spoty: #99E22E;
     --sf-grey: #A3A3A3;
     --sf-grey-bar: #5A5A5A;
     --sf-light-grey: #C1C1C1;
 
+}
+h3 {
+    color: var(--sf-white);
+    font-size: 1rem;
 }
 /* #endregion */
 
@@ -42,6 +47,9 @@ img {
 }
 .col_4 {
     width: calc(100% / 12 * 4);
+}
+.col_6 {
+    width: calc(100% / 12 * 6);
 }
 .col_10 {
     width: calc(100% / 12 * 10);
@@ -149,6 +157,10 @@ img {
     font-weight: 500;
     color: var(--sf-grey);
 }
+.playback .col_6 {
+    width: 100%;
+    justify-content: space-between;
+}
 .playback_left {
     align-items: center;
 }
@@ -229,9 +241,76 @@ img {
 /* #endregion */
 
 /* #region Nav Left */
+.box>.col_2 {
+    background-color: var(--sf-black);
+    overflow: hidden;
+}
 .nav_left {
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    padding: 1.5rem 1rem;
+}
+.logo img {
+    width: 50%;
+    padding-bottom: 1.5rem;
+}
+.section_nav_left,
+.playlist span,
+.playlist_name,
+.profile>.row {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    color: var(--sf-gray-text);
+    align-items: end;
+}
+.section_nav_left img,
+.profile img {
+    width: 10%;
+    filter: invert(46%) sepia(1%) saturate(0%) hue-rotate(162deg) brightness(95%) contrast(88%);
+}
+.section_nav_left span,
+.playlist span,
+.profile span {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+    font-weight: 600;
+    
+}
+.playlist h4 {
+    font-size: 0.8rem;
+    color: var(--sf-white);
+    margin: 1rem 0;
+}
+.playlist i {
+    background-color: var(--sf-gray-text);
+    padding: 0.4rem;
+    font-size: 1.1rem;
+}
+.add_playlist {
+    align-items: flex-end;
+}
+.playlist_name {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.profile hr {
+    width: 100%;
+    height: 0px;
+    margin-bottom: 0.5rem;
+    padding-top: 0.1px;
+    border: none;
+    background-color: var(--sf-gray-text);
+}
+#profile {
+    filter: none;
+    width: 10%;
+    background-color: var(--sf-gray-text);
+    border-radius: 50%;
+}
+.profile h3 {
+    padding-left: 0.5rem;
 }
 /* #endregion */
 
@@ -245,6 +324,9 @@ img {
     }
     .play_time .col_10 {
         width: 80%;
+    }
+    .player .playback .col_6 {
+        justify-content: flex-start;
     }
 }
 
