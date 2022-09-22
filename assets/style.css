@@ -73,6 +73,9 @@ a {
 .padding_inside {
     padding: 0.5rem;
 }
+.pointer:hover {
+    cursor: pointer;
+}
 /* #endregion */
 
 /* #region Debug */
@@ -305,10 +308,27 @@ a {
 }
 .card {
     text-align: center;
+    position: relative;
 }
 .subtitle {
     color: var(--sf-gray-text);
     font-weight: 600;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: rgba(0, 0, 0, 0.563);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.overlay>i {
+    font-size: 3.5rem;
+    color: var(--sf-white);
+}
+.card:hover .overlay {
+    display: flex;
 }
 /* #endregion */
 
