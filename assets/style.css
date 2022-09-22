@@ -29,9 +29,19 @@ img {
     --sf-light-grey: #C1C1C1;
 
 }
-h3 {
+h1 {
+    color: var(--sf-white);
+    margin-bottom: 2rem;
+    padding-left: 0.5rem;
+}
+h2 {
     color: var(--sf-white);
     font-size: 1rem;
+    margin: 1rem 0;
+}
+h3 {
+    color: var(--sf-white);
+    font-size: 0.8rem;
 }
 a {
     text-decoration: none;
@@ -59,6 +69,9 @@ a {
 }
 .col_12 {
     width: calc(100% / 12 * 12);
+}
+.padding_inside {
+    padding: 0.5rem;
 }
 /* #endregion */
 
@@ -251,19 +264,25 @@ a {
 .recent_music {
     flex-wrap: wrap;
 }
-.music_box {
-    height: 100%;
-    background-color: var(--sf-dark);
-}
 .box .main {
     width: 100%;
+    height: 100%;
     overflow: auto;
 }
+.music_box {
+    background-color: var(--sf-dark);
+    padding: 0 1rem;
+}
+.music_box>.row {
+    margin-bottom: 2rem;
+}
 .shift {
+    font-size: 0.8rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     padding: 1rem 0;
+    margin-bottom: 2rem;
 }
 .shift a {
     color:var(--sf-gray-text);
@@ -279,9 +298,16 @@ a {
     width: 100%;
 }
 .shift .border {
-    height: 3px;
+    height: 2px;
     background-color: var(--sf-spoty);
     width: 30%;
+}
+.card {
+    text-align: center;
+}
+.subtitle {
+    color: var(--sf-gray-text);
+    font-weight: 600;
 }
 /* #endregion */
 
@@ -298,7 +324,7 @@ a {
     padding: 1.5rem 1rem;
 }
 .logo img {
-    width: 50%;
+    width: 70%;
     padding-bottom: 1.5rem;
 }
 .section_nav_left,
@@ -312,13 +338,13 @@ a {
 }
 .section_nav_left img,
 .profile img {
-    width: 10%;
+    width: 15%;
     filter: invert(46%) sepia(1%) saturate(0%) hue-rotate(162deg) brightness(95%) contrast(88%);
 }
 .section_nav_left span,
 .playlist span,
 .profile span {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding-left: 0.5rem;
     font-weight: 600;
     
@@ -349,11 +375,15 @@ a {
     border: none;
     background-color: var(--sf-gray-text);
 }
+.profile .row.account {
+    margin-bottom: -1rem;
+}
 #profile {
     filter: none;
     width: 10%;
     background-color: var(--sf-gray-text);
     border-radius: 50%;
+    margin-left: 5px;
 }
 .profile h3 {
     padding-left: 0.5rem;
