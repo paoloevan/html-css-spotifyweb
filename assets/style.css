@@ -267,12 +267,12 @@ a {
 .box .main {
     width: 100%;
     height: 100%;
-    overflow: auto;
 }
 .music_box {
-    height: 100%;
+    height: calc(100% - 70px);
     background-color: var(--sf-dark);
     padding: 0 1rem;
+    overflow: auto;
 }
 .music_box>.row {
     margin-bottom: 2rem;
