@@ -392,6 +392,7 @@ a {
 
 /* #region Nav Small */
 .nav_small {
+    height: 100%;
     padding: 0.5rem;
     text-align: center;
     display: none;
@@ -442,7 +443,17 @@ a {
         display: none;
     }
     .nav_small {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #profile {
+        width: 25px;
+        background-color: var(--sf-gray-text);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        padding: 5px;
+        margin-left: 0;
     }
 }
 /* #endregion */
