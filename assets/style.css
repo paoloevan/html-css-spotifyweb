@@ -264,6 +264,9 @@ a {
     border: 1px solid var(--sf-white);
     border-radius: 20px;
 }
+.call_to_action:hover {
+    transform: scale(1.1);
+}
 .recent_music {
     flex-wrap: wrap;
 }
@@ -293,6 +296,9 @@ a {
     font-weight: 600;
     margin: 0 1rem;
     padding-bottom: 3px;
+}
+.shift a:hover {
+    color: var(--sf-white);
 }
 .shift div:first-child {
     justify-content: center;
@@ -408,6 +414,31 @@ a {
 }
 .profile h3 {
     padding-left: 0.5rem;
+}
+.section_nav_left:hover {
+    color: var(--sf-white);
+    cursor: pointer;
+    border-left: 3px solid var(--sf-spoty);
+    margin-left: -3px;
+}
+.section_nav_left:hover img {
+    filter: none;
+}
+.add_playlist:hover i {
+    background-color: var(--sf-white);
+    cursor: pointer;
+}
+.add_playlist:hover span {
+    color: var(--sf-white);
+    cursor: pointer;
+}
+.playlist_name:hover {
+    color: var(--sf-white);
+    cursor: pointer;
+}
+.profile span:hover {
+    color: var(--sf-white);
+    cursor: pointer;
 }
 /* #endregion */
 
