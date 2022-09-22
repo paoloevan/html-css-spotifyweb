@@ -241,7 +241,8 @@ h3 {
 /* #endregion */
 
 /* #region Nav Left */
-.box>.col_2 {
+.box>.column {
+    width: 200px;
     background-color: var(--sf-black);
     overflow: hidden;
 }
@@ -314,6 +315,21 @@ h3 {
 }
 /* #endregion */
 
+/* #region Nav Small */
+.nav_small {
+    padding: 0.5rem;
+    text-align: center;
+    display: none;
+}
+.nav_small img {
+    width: 90%;
+    padding-bottom: 1rem;
+}
+.grey {
+    filter: invert(46%) sepia(1%) saturate(0%) hue-rotate(162deg) brightness(95%) contrast(88%);
+}
+/* #endregion */
+
 /* #region Media Query */
 @media screen and (max-width: 888px) {
     .music_box .col_md_3 {
@@ -344,6 +360,14 @@ h3 {
 }
 
 @media screen and (max-width: 552px) {
-    
+    .box>.column {
+        width: 50px;
+    }
+    .nav_left {
+        display: none;
+    }
+    .nav_small {
+        display: block;
+    }
 }
 /* #endregion */
