@@ -270,6 +270,7 @@ a {
     overflow: auto;
 }
 .music_box {
+    height: 100%;
     background-color: var(--sf-dark);
     padding: 0 1rem;
 }
