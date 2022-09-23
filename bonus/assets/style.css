@@ -230,12 +230,24 @@ a {
     height: 3px;
     background-color: var(--sf-grey-bar);
 }
-.play_time .col_10>div,
 .actions .col_10>div {
     width: 30%;
     height: 100%;
     background-color: var(--sf-light-grey);
     position: relative;
+}
+.play_time .col_10>div {
+    width: 10%;
+    height: 100%;
+    background-color: var(--sf-light-grey);
+    position: relative;
+    animation-name: play;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes play {
+    to { width: 100%;}
 }
 .play_ball {
     position: absolute;
@@ -294,6 +306,7 @@ a {
     background-color: var(--sf-darker);
     justify-content: flex-end;
     align-items: center;
+
 }
 .upgrade .call_to_action {
     font-size: 0.7rem;
@@ -303,6 +316,19 @@ a {
     color: var(--sf-white);
     border: 1px solid var(--sf-white);
     border-radius: 20px;
+    animation-name: green;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+@keyframes green {
+    to {
+        color: var(--sf-spoty);
+        border-color: var(--sf-spoty);
+        font-size: 0.75rem;
+    }
+
 }
 .call_to_action:hover {
     transform: scale(1.1);
@@ -408,7 +434,16 @@ a {
 }
 .logo img {
     width: 70%;
-    padding-bottom: 1.5rem;
+    padding-bottom: 1.5rem; 
+    animation-name: logo_green;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes logo_green {
+    to {
+        filter: invert(75%) sepia(13%) saturate(2059%) hue-rotate(40deg) brightness(99%) contrast(107%);
+    }
 }
 .section_nav_left,
 .playlist span,
