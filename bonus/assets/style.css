@@ -576,6 +576,12 @@ a {
     .play_time .col_10 {
         width: 70%;
     }
+    .play_time {
+        display: none;
+    }
+    .play_nav {
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 552px) {
@@ -601,7 +607,15 @@ a {
     .box .main {
         width: calc(100vw - 50px);
     }
+    .play_nav .row i:first-child,
+    .play_nav .row i:last-child {
+        display: none;
+    }
+    .playback_right i:last-child {
+        display: none;
+    }
 }
+
 @media screen and (max-height: 650px) {
     .upgrade {
         display: none;
