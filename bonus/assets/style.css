@@ -56,7 +56,8 @@ a {
     width: calc(100% / 12 * 1);
 }
 .col_2 {
-    width: calc(100% / 12 * 2);
+    width: calc(100% / 12 * 1);
+    min-width: 200px;
 }
 .col_4 {
     width: calc(100% / 12 * 4);
@@ -308,13 +309,15 @@ a {
 }
 .recent_music {
     flex-wrap: wrap;
+    min-width: 1200px;
 }
 .box .main {
-    width: 100%;
+    width: calc(100vw - 200px);
     height: 100%;
 }
 .music_box {
-    height: calc(100% - 70px);
+    height:  calc(100% - 70px);
+    width: 100%;
     background-color: var(--sf-dark);
     padding: 0 1rem;
     overflow: auto;
@@ -514,9 +517,7 @@ a {
 
 /* #region Media Query */
 @media screen and (max-width: 888px) {
-    .music_box .col_md_3 {
-        width: calc(100% / 12 * 3);
-    }
+    
     .player .col_md_4 {
         width: calc(100% / 12 * 4);
     }
@@ -529,10 +530,7 @@ a {
 }
 
 @media screen and (max-width: 648px) {
-    .music_box
-    .col_sm_6 {
-        width: calc(100% / 12 * 6);
-    }
+  
     .play_nav>.row {
         width: 70%;
     }
@@ -560,6 +558,9 @@ a {
         aspect-ratio: 1;
         padding: 5px;
         margin-left: 0;
+    }
+    .box .main {
+        width: calc(100vw - 50px);
     }
 }
 /* #endregion */
