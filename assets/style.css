@@ -296,10 +296,23 @@ a {
     font-weight: 600;
     margin: 0 1rem;
     padding-bottom: 3px;
+    position: relative;
+}
+.shift a:hover::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    background-color: var(--sf-spoty);
 }
 .shift a:hover {
     color: var(--sf-white);
 }
+
 .shift div:first-child {
     justify-content: center;
     flex-wrap: wrap;
