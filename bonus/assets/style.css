@@ -307,8 +307,9 @@ a {
 .call_to_action:hover {
     transform: scale(1.1);
 }
-.recent_music {
-    flex-wrap: wrap;
+.recent_music,
+.personal_music,
+.popular_music {
     min-width: 1200px;
 }
 .box .main {
@@ -561,6 +562,14 @@ a {
     }
     .box .main {
         width: calc(100vw - 50px);
+    }
+}
+@media screen and (max-height: 650px) {
+    .upgrade {
+        display: none;
+    }
+    .music_box {
+        height: 100%;
     }
 }
 /* #endregion */
