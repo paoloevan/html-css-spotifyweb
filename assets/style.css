@@ -277,6 +277,13 @@ a {
 .play_time .col_10:hover .play_ball {
     display: block;
 }
+.sound .col_10:hover>div {
+    cursor: pointer;
+    background-color: var(--sf-spoty);
+}
+.sound .col_10:hover .play_ball {
+    display: block;
+}
 /* #endregion */
 
 /* #region Music Box */
