@@ -279,6 +279,9 @@ a {
     cursor: pointer;
     color: var(--sf-white);
 }
+.play_nav i {
+    transition: transform 0.1s;
+}
 .play_nav i:hover {
     cursor: pointer;
     transform: scale(1.3);
