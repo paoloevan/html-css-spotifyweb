@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Spotify</title>
+</head>
+
+<body class="">
+    <div class="wrapper">
+        <!-- sezione in alto -->
+        <div class="box row">
+            <!-- navigazione sinistra -->
+            <div class="column">
+
+                <div class="row nav_left">
+                    <!-- Home - Cerca - Libreria - Playlist-->
+                    <div class="navigation">
+
+                        <div class="logo">
+                            <img src="./assets/img/logo.svg" alt="">
+                        </div>
+
+                        <div class="section_nav_left row">
+                            <img src="./assets/img/home.svg" alt="">
+                            <span>Home</span>
+                        </div>
+                        <div class="section_nav_left row">
+                            <img src="./assets/img/search.svg" alt="">
+                            <span>Cerca</span>
+                        </div>
+                        <div class="section_nav_left row">
+                            <img src="./assets/img/libreria.svg" alt="">
+                            <span>La tua libreria</span>
+                        </div>
+                        <!-- Playlist -->
+                        <div class="playlist">
+                            <h4>PLAYLIST</h4>
+                            <div class="add_playlist row">
+                                <i class="fa-solid fa-plus"></i>
+                                <span>Crea Playlist</span>
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                            <div class="playlist_name">
+                                Nome Playlist
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Profilo - Installa App -->
+                    <div class="profile">
+                        <div class="row">
+                            <img src="./assets/img/download.svg" alt="">
+                            <span>Installa App</span>
+                        </div>
+                        <hr>
+                        <div class="row account">
+                            <img id="profile" src="./assets/img/profile.svg" alt="">
+                            <h3>John Doe</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nav-left varsione small -->
+                <div class="nav_small row">
+                    <div class="nav_up">
+                        <img src="./assets/img/logo-small.svg" alt="">
+                        <img src="./assets/img/home.svg" alt="">
+                        <img class="grey" src="./assets/img/search.svg" alt="">
+                        <img class="grey" src="./assets/img/libreria.svg" alt="">
+                    </div>
+
+                    <div class="nav_bottom">
+                        <img src="./assets/img/download.svg" alt="">
+                        <img id="profile" src="./assets/img/profile.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- finestra principale -->
+            <div class="main">
+                <div class="upgrade row">
+                    <div class="call_to_action pointer">
+                        EFFETTUA L'UPGRADE
+                    </div>
+                </div>
+
+                <div class="music_box">
+                    <!-- Barra di navigazione principale -->
+                    <div class="shift row">
+                        <a href="#" class="change">IN EVIDENZA</a>
+                        <a href="#" class="change">PODCAST</a>
+                        <a href="#" class="change">CLASSIFICHE</a>
+                        <a href="#" class="change">GENERI E MOOD</a>
+                        <a href="#" class="change">NUOVE USCITE</a>
+                        <a href="#" class="change">SCOPRI</a>
+                    </div>
+
+                    <!-- Principale -->
+                    <h1>Recently played</h1>
+                    <div class="row recent_music">
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/metal_lifting.jpg" alt="">
+                                <h2>Heavy Metal</h2>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/stranger.jpeg" alt="">
+                                <h2>Stranger Things, Vol. 1 (a Netflix Original Series Suondtrack)</h2>
+                                <div class="subtitle">Kyle & Michael Stein</div>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/aquietplace.jpeg" alt="">
+                                <h2>A quiet place</h2>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/split.jpeg" alt="">
+                                <h2>Split</h2>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/cure.jpeg" alt="">
+                                <h2>A cure for wellness</h2>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/sinister.jpeg" alt="">
+                                <h2>Sinister</h2>
+                                <div class="subtitle">Subtitle</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <h1>Creato per John Doe</h1>
+                    <div class="row personal_music">
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/radar.jpeg" alt="">
+                                <h2>Release Radar</h2>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/mixdaily.jpeg" alt="">
+                                <h2>Daily Mix 1</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1>Artisti più popolari</h1>
+                    <div class="row popular_music">
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/youg.jpeg" alt="">
+                                <h2>Lana Del Rey</h2>
+                            </div>
+                        </div>
+
+                        <div class="padding_inside col_2 col_md_3 col_sm_6">
+                            <div class="card pointer">
+                                <div class="overlay">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <img src="./assets/img/einaudi.jpeg" alt="">
+                                <h2>Ludovico Einaudi</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- sezione player -->
+        <div class="player row">
+            <!-- Riproduzione in corso -->
+            <div class="playback row col_2 col_md_4">
+                <div class="col_6 row">
+                    <div class="playback_left row">
+                        <img src="./assets/img/sinister.jpeg" alt="">
+                        <div>
+                            <div class="name_track">Sinister</div>
+                            <div class="name_artist">Brano Nome</div>
+                        </div>
+                    </div>
+
+                    <div class="playback_right row">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-folder"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Player centrale -->
+            <div class="play col_4 row">
+
+                <div class="play_nav row col_12">
+                    <div class="row col_4">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <i class="fa-solid fa-backward-step"></i>
+                        <i class="fa-regular fa-circle-play"></i>
+                        <i class="fa-solid fa-forward-step"></i>
+                        <i class="fa-solid fa-rotate-right"></i>
+                    </div>
+                </div>
+
+                <div class="play_time row col_12">
+                    <div class="col_1">0:25</div>
+                    <div class="col_10 row">
+                        <div>
+                            <div class="play_ball"></div>
+                        </div>
+                    </div>
+                    <div class="col_1">4:35</div>
+                </div>
+
+            </div>
+
+            <!-- volume e azioni -->
+            <div class="actions col_2 row col_md_4">
+                <div class="row">
+
+                    <span><i class="fa-solid fa-list"></i></span>
+                    <span><i class="fa-solid fa-desktop"></i></span>
+                    <span><i class="fa-solid fa-volume-high"></i></span>
+                </div>
+
+                <div class="col_6 sound">
+                    <div class="col_10 row">
+                        <div>
+                            <div class="play_ball"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
