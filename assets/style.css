@@ -234,6 +234,19 @@ a {
     width: 30%;
     height: 100%;
     background-color: var(--sf-light-grey);
+    position: relative;
+}
+.play_ball {
+    position: absolute;
+    width: 12px;
+    aspect-ratio: 1;
+    background-color: var(--sf-white);
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    display: none;
 }
 .actions span {
     margin: 0.5rem;
@@ -244,6 +257,25 @@ a {
 .sound  {
     width: 30%;
     margin-left: 0.5rem;
+}
+.playback_left div:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.playback_right i:hover {
+    cursor: pointer;
+    color: var(--sf-white);
+}
+.play_nav i:hover {
+    cursor: pointer;
+    transform: scale(1.3);
+}
+.play_time .col_10:hover>div {
+    cursor: pointer;
+    background-color: var(--sf-spoty);
+}
+.play_time .col_10:hover .play_ball {
+    display: block;
 }
 /* #endregion */
 
